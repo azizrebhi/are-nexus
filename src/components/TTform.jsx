@@ -59,13 +59,13 @@ const TTform = () => {
     <div className="min-h-screen  text-white flex justify-center py-16 px-4">
       <div className="max-w-5xl w-full bg-neutral-800 rounded-xl p-10 border border-neutral-700 shadow-2xl">
         <h2 className="text-4xl font-bold text-center mb-10">
-          Registration – <span className="text-[#E2AC0D]">SKYPIEA Challenge</span>
+          Registration – <span className="text-[#E2AC0D]">THE HELLISH BLAST</span>
         </h2>
 
         <p className="text-gray-300 text-lg mb-10 leading-relaxed text-justify">
           RoboCup ENSI 7.0 returns on <strong className="text-white">October 13, 2024</strong> with the theme
           <span className="text-[#E2AC0D] font-semibold"> “CHEMICAL CHAOS: ROBOTS ON A MISSION”</span>. This form is for participants of the
-          <strong className="text-white"> Autonomous Challenge – SKYPIEA</strong>. Build a robot to save the floating kingdom by discovering
+          <strong className="text-white"> All Terrain Challenge – THE HELLISH BLAST</strong>. Build a robot to save the floating kingdom by discovering
           a new chemical insulator in a race against time!
         </p>
 
