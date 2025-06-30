@@ -45,7 +45,7 @@ const JoinFormPage = () => {
       const body = new URLSearchParams(formData).toString();
   
       const res = await fetch(
-        "https://script.google.com/macros/s/AKfycbzpZX-LAdfE6_oFX1q878_gxdDxV0UhSgfXaXSp6hC4s1_7ScqUR304MCYKN-fDyawzBA/exec",
+        "https://script.google.com/macros/s/AKfycbzKQhn0jnmckXHTiSbVQE6Y7sgzpQ1KRJxOXNSshbV88_2QkRbDtnkEmpqzT6IbBaBG4A/exec",
         {
           method: "POST",
           headers: {
@@ -56,7 +56,8 @@ const JoinFormPage = () => {
       );
   
       const text = await res.text();
-  
+      console.log("Google Sheets response:", text); // ✅ Add this line
+
       if (text.toLowerCase().includes("success")) {
         alert("Form submitted successfully!");
   
