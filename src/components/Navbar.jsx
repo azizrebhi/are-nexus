@@ -15,23 +15,13 @@ const Navbar = () => {
 
   const handleNavClick = (item) => {
     setMobileDrawerOpen(false);
-    if (item.href.startsWith("#")) {
-      if (location.pathname !== "/") {
-        sessionStorage.setItem("scrollTo", item.href);
-        navigate("/");
-      } else {
-        const id = item.href.replace("#", "");
-        const el = document.getElementById(id);
-        if (el) el.scrollIntoView({ behavior: "smooth" });
-      }
-    } else {
-      navigate(item.href);
-    }
+    window.scrollTo(0, 0); // ✅ Always scroll to top
+    navigate(item.href);
   };
 
   const handleLogout = async () => {
     await logout();
-    navigate("/", { replace: true }); // redirect to home or "/signin"
+    navigate("/", { replace: true });
   };
 
   const memberLinks = [

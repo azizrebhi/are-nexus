@@ -25,23 +25,8 @@ import PrivateRoute from "./components/PrivateRoute"; // Ensure this is imported
 import LineFollowerDash from "./components/LineFollowerDash";
 import TTDashboard from "./components/TTDashboard";
 import JuniorDashboard from "./components/JuniorDashboard";
-const ScrollToHashElement = () => {
-  const location = useLocation();
+import AskAI from "./components/AskAi";
 
-  useEffect(() => {
-    if (location.hash) {
-      const id = location.hash.replace("#", "");
-      const element = document.getElementById(id);
-      if (element) {
-        setTimeout(() => {
-          element.scrollIntoView({ behavior: "smooth" });
-        }, 100);
-      }
-    }
-  }, [location]);
-
-  return null;
-};
 
 const Home = () => {
   return (
@@ -71,7 +56,7 @@ const App = () => {
   return (
     <Router>
       <MainLayout>
-        <ScrollToHashElement />
+    
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/robocup" element={<RoboCup />} />
@@ -86,6 +71,7 @@ const App = () => {
           <Route path="/LineFollower-Dashboard" element={<PrivateRoute><LineFollowerDash /></PrivateRoute>} />
           <Route path="/TTDashboard" element={<PrivateRoute><TTDashboard /></PrivateRoute>} />
           <Route path="/Junior-Dashboard" element={<PrivateRoute><JuniorDashboard /></PrivateRoute>} />
+          <Route path="/ask-ai" element={<AskAI />} />
 
 
           

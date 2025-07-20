@@ -26,7 +26,8 @@ export const navItems = [
   
   { label: "Robocup", href: "/robocup" },
   { label: "Join the Team", href: "/join" },
-  { label: "SignIn", href: "/SignIn" }
+  { label: "SignIn", href: "/SignIn" },
+  { label: "Ask AI", href: "/ask-ai" }
 ];
 export const teamMembers = [
   {
