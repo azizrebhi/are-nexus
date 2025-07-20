@@ -39,7 +39,7 @@ const AskAI = () => {
     <div className="min-h-screen text-white flex justify-center py-16 px-4">
       <div className="max-w-4xl w-full bg-neutral-800 rounded-xl p-10 border border-neutral-700 shadow-2xl">
         <h2 className="text-4xl font-bold text-center mb-10">
-          Ask the <span className="text-[#E2AC0D]">Robotics Assistant</span>
+          Ask  <span className="text-[#E2AC0D]">AREAI </span>
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-6 text-lg max-w-3xl mx-auto">
